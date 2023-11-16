@@ -1,0 +1,3 @@
+var a;
+set a d123;
+array 

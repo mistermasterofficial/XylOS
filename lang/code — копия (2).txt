@@ -1,0 +1,99 @@
+!include STDLIB;
+
+!memset hffff;
+
+!tmpl print_all_chars;
+	rmc;
+	!set hff;
+	loop;
+		lmc;
+		exeout;
+		add;
+		rmc;
+		sub;
+	endloop;
+	lmc;clear;
+!endtmpl;
+
+!tmpl input_;
+	clear;
+	.IN_TERM_KEY_PRESSED;
+	exein;
+	.if;
+		clear;
+		.OUT_TERM_KEY_UPDATE;
+		exeout;
+		.IN_TERM_KEY;ric;.IN_TERM_CHAR;lic;
+		.OUT_TERM_WRITE;
+		
+		exein;
+		rmc;rmc;rmc;rmc;
+		ric;
+		exein;
+		lic;
+		lmc;lmc;lmc;lmc;
+	
+		copy;
+		rmc;clear;.KEY_ENTER;lmc;
+		is;
+		rmc;clear;lmc;
+	
+		.if;
+			rmc;rmc;
+			.print_all_chars;
+			lmc;lmc;
+		.endif;
+	
+		paste;
+		rmc;clear;.KEY_ENTER;lmc;
+		copy;
+		is;
+		rmc;clear;lmc;
+		not;
+	
+		.if;
+			rmc;rmc;rmc;rmc;
+			exeout;
+			lmc;lmc;lmc;lmc;
+		.endif;
+	.endif;
+!endtmpl;
+
+!tmpl main_;
+	//.OUT_TERM_CURSOR_VISIBLE;
+	//exeout;
+	
+	!rep rmc d50;
+	.input;
+	.print;
+	!rep lmc d50;
+	
+	add;
+	loop;
+	endloop;
+!endtmpl;
+
+!tmpl hello_world;
+	.OUT_MEM_UPDATE_FIXED_POS_FROM_CURSOR;exeout;
+	.OUT_TERM_CURSOR_VISIBLE;exeout;
+	
+	!setl Hello, World!;rmc;clear;
+	
+	.OUT_MEM_SET_CURSOR;exeout;
+	
+	.print;
+		
+	loop;endloop;
+!endtmpl;
+
+!tmpl a;
+	lshift;
+	.b;
+!endtmpl;
+
+!tmpl b;
+	.if;
+	.endif;
+!endtmpl;
+
+.a;

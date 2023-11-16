@@ -1,0 +1,326 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "XylOS/1.0.0": {
+        "dependencies": {
+          "Cosmos.Build": "0.1.0-localbuild20230924110923",
+          "Cosmos.Debug.Kernel": "0.1.0-localbuild20230924110931",
+          "Cosmos.System2": "0.1.0-localbuild20230924110931",
+          "DynamicLanguageRuntime": "1.3.4",
+          "IronPython": "3.4.1"
+        },
+        "runtime": {
+          "XylOS.dll": {}
+        }
+      },
+      "Cosmos.Build/0.1.0-localbuild20230924110923": {},
+      "Cosmos.Common/0.1.0-localbuild20230924110931": {
+        "dependencies": {
+          "Cosmos.Debug.Kernel": "0.1.0-localbuild20230924110931"
+        },
+        "runtime": {
+          "lib/net6.0/Cosmos.Common.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.0"
+          }
+        }
+      },
+      "Cosmos.Core/0.1.0-localbuild20230924110931": {
+        "dependencies": {
+          "Cosmos.Debug.Kernel": "0.1.0-localbuild20230924110931",
+          "IL2CPU.API": "0.1.0-localbuild20230924110931"
+        },
+        "runtime": {
+          "lib/net6.0/Cosmos.Core.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.0"
+          }
+        }
+      },
+      "Cosmos.Debug.Kernel/0.1.0-localbuild20230924110931": {
+        "runtime": {
+          "lib/netstandard2.0/Cosmos.Debug.Kernel.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.0"
+          }
+        }
+      },
+      "Cosmos.HAL2/0.1.0-localbuild20230924110931": {
+        "dependencies": {
+          "Cosmos.Common": "0.1.0-localbuild20230924110931",
+          "Cosmos.Core": "0.1.0-localbuild20230924110931",
+          "Cosmos.Debug.Kernel": "0.1.0-localbuild20230924110931",
+          "IL2CPU.API": "0.1.0-localbuild20230924110931"
+        },
+        "runtime": {
+          "lib/net6.0/Cosmos.HAL2.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.0"
+          }
+        }
+      },
+      "Cosmos.System2/0.1.0-localbuild20230924110931": {
+        "dependencies": {
+          "Cosmos.Common": "0.1.0-localbuild20230924110931",
+          "Cosmos.Debug.Kernel": "0.1.0-localbuild20230924110931",
+          "Cosmos.HAL2": "0.1.0-localbuild20230924110931",
+          "IL2CPU.API": "0.1.0-localbuild20230924110931"
+        },
+        "runtime": {
+          "lib/net6.0/Cosmos.System2.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.0"
+          }
+        }
+      },
+      "DynamicLanguageRuntime/1.3.4": {
+        "dependencies": {
+          "System.CodeDom": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Dynamic.dll": {
+            "assemblyVersion": "1.3.4.0",
+            "fileVersion": "1.3.4.1000"
+          },
+          "lib/net6.0/Microsoft.Scripting.Metadata.dll": {
+            "assemblyVersion": "1.3.4.0",
+            "fileVersion": "1.3.4.1000"
+          },
+          "lib/net6.0/Microsoft.Scripting.dll": {
+            "assemblyVersion": "1.3.4.0",
+            "fileVersion": "1.3.4.1000"
+          }
+        }
+      },
+      "IL2CPU.API/0.1.0-localbuild20230924110931": {
+        "runtime": {
+          "lib/netstandard2.0/IL2CPU.API.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.0"
+          }
+        }
+      },
+      "IronPython/3.4.1": {
+        "dependencies": {
+          "DynamicLanguageRuntime": "1.3.4",
+          "Mono.Unix": "7.1.0-final.1.21458.1"
+        },
+        "runtime": {
+          "lib/net6.0/IronPython.Modules.dll": {
+            "assemblyVersion": "3.4.1.0",
+            "fileVersion": "3.4.1.1000"
+          },
+          "lib/net6.0/IronPython.SQLite.dll": {
+            "assemblyVersion": "3.4.1.0",
+            "fileVersion": "3.4.1.1000"
+          },
+          "lib/net6.0/IronPython.Wpf.dll": {
+            "assemblyVersion": "3.4.1.0",
+            "fileVersion": "3.4.1.1000"
+          },
+          "lib/net6.0/IronPython.dll": {
+            "assemblyVersion": "3.4.1.0",
+            "fileVersion": "3.4.1.1000"
+          }
+        }
+      },
+      "Mono.Unix/7.1.0-final.1.21458.1": {
+        "runtime": {
+          "lib/net6.0/Mono.Unix.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.100.21.45801"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/android-arm/native/libMono.Unix.so": {
+            "rid": "android-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/android-arm64/native/libMono.Unix.so": {
+            "rid": "android-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/android-x64/native/libMono.Unix.so": {
+            "rid": "android-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/android-x86/native/libMono.Unix.so": {
+            "rid": "android-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/ios-arm/native/libMono.Unix.a": {
+            "rid": "ios-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/ios-arm64/native/libMono.Unix.a": {
+            "rid": "ios-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/ios-armv7s/native/libMono.Unix.a": {
+            "rid": "ios-armv7s",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/iossimulator-arm64/native/libMono.Unix.a": {
+            "rid": "iossimulator-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/iossimulator-x64/native/libMono.Unix.a": {
+            "rid": "iossimulator-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-arm/native/libMono.Unix.so": {
+            "rid": "linux-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-arm64/native/libMono.Unix.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libMono.Unix.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/maccatalyst-arm64/native/libMono.Unix.a": {
+            "rid": "maccatalyst-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/maccatalyst-x64/native/libMono.Unix.a": {
+            "rid": "maccatalyst-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-arm64/native/libMono.Unix.dylib": {
+            "rid": "osx-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libMono.Unix.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/tvos-arm64/native/libMono.Unix.a": {
+            "rid": "tvos-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/tvossimulator-x64/native/libMono.Unix.a": {
+            "rid": "tvossimulator-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "System.CodeDom/6.0.0": {
+        "runtime": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "XylOS/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cosmos.Build/0.1.0-localbuild20230924110923": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2qbN5hhrGVYbHCVig3un77od3yU4bMhvuC+MD7VTndQWF9D7eMHo1GcVRzxtnL37cnP9V6OLLLKetQW/INsT7Q==",
+      "path": "cosmos.build/0.1.0-localbuild20230924110923",
+      "hashPath": "cosmos.build.0.1.0-localbuild20230924110923.nupkg.sha512"
+    },
+    "Cosmos.Common/0.1.0-localbuild20230924110931": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lmaaux9bhRhmb4E/PPG9QXJXwGZOpzY9OIV2ijLaSl2++hcLjKMhtR7A08E1Y39sJrwpMnmRQr1CKv7vlb5KyQ==",
+      "path": "cosmos.common/0.1.0-localbuild20230924110931",
+      "hashPath": "cosmos.common.0.1.0-localbuild20230924110931.nupkg.sha512"
+    },
+    "Cosmos.Core/0.1.0-localbuild20230924110931": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hX00y9q7HGytKOQGYYgmmEGZr+pPi3CeVujNQdWHWvVmOiFm1sEJ4a1e9uOMf8QK2nCSO9ONTq/73wMBplAUWg==",
+      "path": "cosmos.core/0.1.0-localbuild20230924110931",
+      "hashPath": "cosmos.core.0.1.0-localbuild20230924110931.nupkg.sha512"
+    },
+    "Cosmos.Debug.Kernel/0.1.0-localbuild20230924110931": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GZRgFVzIB01RRAoVu+gBdFr6vlabrtiOfCGjEFBrjlBrQFbJ72mbvZ3nzrtDa35WX/6LMMHE8P5nW8HcS4mb7Q==",
+      "path": "cosmos.debug.kernel/0.1.0-localbuild20230924110931",
+      "hashPath": "cosmos.debug.kernel.0.1.0-localbuild20230924110931.nupkg.sha512"
+    },
+    "Cosmos.HAL2/0.1.0-localbuild20230924110931": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LP7BptKjXs4bI2QN87oOR/EJGWYdXCbK+c87ubXEe7ll9PCYcvEuPR4ZjXdgyFbte+obXnNmBrAdI1ki32lzKg==",
+      "path": "cosmos.hal2/0.1.0-localbuild20230924110931",
+      "hashPath": "cosmos.hal2.0.1.0-localbuild20230924110931.nupkg.sha512"
+    },
+    "Cosmos.System2/0.1.0-localbuild20230924110931": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZIU9x1m63c6AmShmIQgcJzDL6rIsxK3m9EGidE2mdRLflwfP/rqGb5U1nlksgOtQYiD4GDWo9YIcSxT3RDW43g==",
+      "path": "cosmos.system2/0.1.0-localbuild20230924110931",
+      "hashPath": "cosmos.system2.0.1.0-localbuild20230924110931.nupkg.sha512"
+    },
+    "DynamicLanguageRuntime/1.3.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tYp2w0KSARfyn7MQhagCbHYLfnoVpKXRxhpZDngACq16cTkJyh4BudpI38M4xFRCD78hdYi6WHd7RZZJ96oNFg==",
+      "path": "dynamiclanguageruntime/1.3.4",
+      "hashPath": "dynamiclanguageruntime.1.3.4.nupkg.sha512"
+    },
+    "IL2CPU.API/0.1.0-localbuild20230924110931": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-z61gqATsRlFs5bzuMctaetizyZ4sCslM6Qbf3d8zfeZJg7t/Kf8NDhqPhnCvWWZ+Slx5O72OeZFxy3UndMuRyg==",
+      "path": "il2cpu.api/0.1.0-localbuild20230924110931",
+      "hashPath": "il2cpu.api.0.1.0-localbuild20230924110931.nupkg.sha512"
+    },
+    "IronPython/3.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2CKriGKn8KAdEHTpV6umPaEA5kq2tod5npH1V07JeEetJO0PqNYLD7ovJcUB4ZfPVPhwdrlGkOeqyJx8EGGJVA==",
+      "path": "ironpython/3.4.1",
+      "hashPath": "ironpython.3.4.1.nupkg.sha512"
+    },
+    "Mono.Unix/7.1.0-final.1.21458.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rhxz4A7By8Q0wEgDqR+mioDsYXGrcYMYPiWE9bSaUKMpG8yAGArhetEQV5Ms6KhKCLdQTlPYLBKPZYoKbAvT/g==",
+      "path": "mono.unix/7.1.0-final.1.21458.1",
+      "hashPath": "mono.unix.7.1.0-final.1.21458.1.nupkg.sha512"
+    },
+    "System.CodeDom/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CPc6tWO1LAer3IzfZufDBRL+UZQcj5uS207NHALQzP84Vp/z6wF0Aa0YZImOQY8iStY0A2zI/e3ihKNPfUm8XA==",
+      "path": "system.codedom/6.0.0",
+      "hashPath": "system.codedom.6.0.0.nupkg.sha512"
+    }
+  }
+}
