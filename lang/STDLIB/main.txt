@@ -1,7 +1,0 @@
-!include drivers;
-!include keys;
-!include notes;
-!include durations;
-!include basics;
-!include colors;
-!include termsizes;
